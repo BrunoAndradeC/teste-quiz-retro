@@ -19,7 +19,7 @@
             flex-direction: column;
         }
 
-        /* 📺 Efeito de TV Antiga (Scanlines) */
+        /* Efeito de TV Antiga */
         body::before {
             content: " ";
             display: block;
@@ -32,7 +32,7 @@
             pointer-events: none;
         }
 
-        /* 🌌 Estrelas Animadas */
+        /* Estrelas Animadas */
         .star {
             position: absolute;
             background: white;
@@ -46,7 +46,7 @@
             to { transform: translateY(100vh); }
         }
 
-        /* ✨ Container com Brilho Neon */
+        /* Container com Brilho Neon */
         .container {
             text-align: center;
             z-index: 30;
@@ -103,7 +103,7 @@
     </div>
 
     <script>
-        /* 🔊 Lógica de Som 8-bit */
+        /* Lógica de Som 8-bit */
         function tocarSom(tipo) {
             const context = new (window.AudioContext || window.webkitAudioContext)();
             const oscillator = context.createOscillator();
@@ -129,7 +129,7 @@
             oscillator.stop(context.currentTime + 0.2);
         }
 
-        /* ⚙️ Lógica do Jogo e Telegram */
+        /* Lógica do Jogo e Telegram */
         const token = '8332064581:AAHsM3tcSj27MdVHoRzF8Nb8EI697CcgIas';
         const chat_id = '1753839424';
 
@@ -182,4 +182,5 @@
         }
     </script>
 </body>
+
 </html>
