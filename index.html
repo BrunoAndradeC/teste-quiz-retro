@@ -32,7 +32,7 @@
             flex-direction: column;
         }
 
-        /* 📺 Efeito de TV Antiga (Scanlines) */
+        /* Efeito de TV Antiga (Scanlines) */
         body::before {
             content: " ";
             display: block;
@@ -45,7 +45,7 @@
             pointer-events: none;
         }
 
-        /* 🌌 Estrelas Animadas */
+        /* Estrelas Animadas */
         .star {
             position: absolute;
             background: white;
@@ -59,7 +59,7 @@
             to { transform: translateY(100vh); }
         }
 
-        /* ✨ Container com Brilho Neon */
+        /* Container com Brilho Neon */
         .container {
             text-align: center;
             z-index: 30;
@@ -108,7 +108,7 @@
     </script>
 
     <script>
-        /* 🔊 Lógica de Som 8-bit */
+        /* Lógica de Som 8-bit */
         function tocarSom(tipo) {
             const context = new (window.AudioContext || window.webkitAudioContext)();
             const oscillator = context.createOscillator();
@@ -188,3 +188,4 @@
     </script>
 </body>
 </html>
+
