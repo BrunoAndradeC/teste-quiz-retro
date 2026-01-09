@@ -2,8 +2,21 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>MISSÃO: PEDIDO 💍</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Missão: Pedido de Casamento 💍</title>
+            <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="game-box">
+    <h1 id="titulo">PLAYER 1 READY?</h1> 
+    <div id="conteudo">
+        <button onclick="tocarSom('acerto'); proximaFase(1)">START</button>
+    </div>
+    <p id="feedback" class="erro"></p>
+</div>
+
+            <script src="script.js"></script>
     <style>
         /* CSS - Estilo Retro e Efeitos Visuais */
         body {
@@ -19,7 +32,7 @@
             flex-direction: column;
         }
 
-        /* Efeito de TV Antiga */
+        /* 📺 Efeito de TV Antiga (Scanlines) */
         body::before {
             content: " ";
             display: block;
@@ -32,7 +45,7 @@
             pointer-events: none;
         }
 
-        /* Estrelas Animadas */
+        /* 🌌 Estrelas Animadas */
         .star {
             position: absolute;
             background: white;
@@ -46,7 +59,7 @@
             to { transform: translateY(100vh); }
         }
 
-        /* Container com Brilho Neon */
+        /* ✨ Container com Brilho Neon */
         .container {
             text-align: center;
             z-index: 30;
@@ -94,16 +107,8 @@
         }
     </script>
 
-    <div class="container" id="game-box">
-        <h1 id="titulo" class="pixel-text">PLAYER 1 READY?</h1>
-        <div id="conteudo">
-            <button onclick="tocarSom('acerto'); proximaFase(1)">START</button>
-        </div>
-        <p id="feedback" class="erro"></p>
-    </div>
-
     <script>
-        /* Lógica de Som 8-bit */
+        /* 🔊 Lógica de Som 8-bit */
         function tocarSom(tipo) {
             const context = new (window.AudioContext || window.webkitAudioContext)();
             const oscillator = context.createOscillator();
@@ -129,9 +134,9 @@
             oscillator.stop(context.currentTime + 0.2);
         }
 
-        /* Lógica do Jogo e Telegram */
-        const TELEGRAM_TOKEN = 'SEU_TOKEN_AQUI';
-        const CHAT_ID = 'SEU_CHAT_ID_AQUI';
+        /* ⚙️ Lógica do Jogo e Telegram */
+        const token = '8332064581:AAHsM3tcSj27MdVHoRzF8Nb8EI697CcgIas';
+        const chat_id = '1753839424';
 
         const perguntas = [
             { q: "Onde foi o nosso primeiro beijo?", opts: ["Pátio do batista", "Atrás do batista", "Sala do batista"], ans: 1 },
@@ -182,6 +187,4 @@
         }
     </script>
 </body>
-
 </html>
-
