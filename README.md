@@ -17,6 +17,8 @@ O projeto é um jogo de quiz inspirado na estética de fliperamas antigos (Retro
 * **JavaScript (Vanilla):** Lógica do jogo, manipulação do DOM e integração com API.
 * **Telegram Bot API:** Sistema de notificações externas.
 
+"Nota: Por questões de segurança, as credenciais do bot do Telegram foram omitidas. Para testar, insira seu próprio Token nas constantes no topo do script.js."
+
 ## 📖 Como Rodar o Projeto
 1. Clone este repositório.
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
